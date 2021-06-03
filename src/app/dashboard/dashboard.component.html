@@ -1,0 +1,5 @@
+<h1>Top Coctails</h1>
+<div class='coctails-menu'>
+    <a *ngFor='let coctail of drinks'
+     routerLink="/detail/{{coctail.idDrink}}">{{coctail.idDrink}}</a>
+</div>

@@ -1,0 +1,8 @@
+<h2>Coctails</h2>
+<ul class="drink">
+  <li *ngFor="let poto of drinks">
+    <a routerLink="/detail/{{poto.idDrink}}">
+      <span class="badge">{{poto.idDrink}}</span> 
+    </a>
+  </li>
+</ul>

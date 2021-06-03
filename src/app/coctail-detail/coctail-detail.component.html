@@ -1,0 +1,9 @@
+<div *ngIf="drink">
+    <h2>{{drink.idDrink | uppercase}} Details</h2>
+    <div><span>name: </span>{{drink.idDrink}}</div>
+    <div>
+      <label for="drink-name">Coctail name: </label>
+      <input id="drink-name" [(ngModel)]="drink.strDrink" placeholder="Drink name"/>
+    </div>
+    <button (click)="goBack()">go back</button>
+  </div>
